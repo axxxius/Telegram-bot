@@ -67,9 +67,10 @@ const start = () => {
 
         if (data === chats[chatId]) {
             return bot.sendMessage(chatId, `Поздравляю ты отгадал ${chats[chatId]}`, againOptions)
-        } else {
-            return bot.sendMessage(chatId, `Видимо у человечества мало шансов, ты не отгадал, бот загадал цифру ${chats[chatId]}`, againOptions)
-        }
+        } 
+        
+        return bot.sendMessage(chatId, `Видимо у человечества мало шансов, ты не отгадал, бот загадал цифру ${chats[chatId]}`, againOptions)
+        
     })
 }
 
